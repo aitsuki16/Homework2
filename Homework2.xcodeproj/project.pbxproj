@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE57F2DD2C081B910067C125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2DC2C081B910067C125 /* AppDelegate.swift */; };
+		CE57F2DF2C081B910067C125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2DE2C081B910067C125 /* SceneDelegate.swift */; };
+		CE57F2E72C081B910067C125 /* Homework2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2E52C081B910067C125 /* Homework2.xcdatamodeld */; };
+		CE57F2E92C081B930067C125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE57F2E82C081B930067C125 /* Assets.xcassets */; };
+		CE57F2EC2C081B930067C125 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE57F2EB2C081B930067C125 /* Base */; };
+		CE57F2F72C081CE20067C125 /* StackOverflowUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2F62C081CE20067C125 /* StackOverflowUseCase.swift */; };
+		CE57F2F92C081D2F0067C125 /* StackOverflowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2F82C081D2F0067C125 /* StackOverflowRepository.swift */; };
+		CE57F2FB2C081D4D0067C125 /* StackOverflowApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2FA2C081D4D0067C125 /* StackOverflowApiClient.swift */; };
+		CE57F2FD2C081D700067C125 /* StackOveflowEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2FC2C081D700067C125 /* StackOveflowEntity.swift */; };
+		CE57F2FF2C081DD20067C125 /* StackRepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2FE2C081DD20067C125 /* StackRepoViewController.swift */; };
+		CE57F3012C081DFD0067C125 /* StackRepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F3002C081DFD0067C125 /* StackRepoDetailViewController.swift */; };
+		CE57F3032C081E4B0067C125 /* StackRepoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE57F3022C081E4B0067C125 /* StackRepoViewController.storyboard */; };
+		CE57F3052C081E750067C125 /* StackRepoDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE57F3042C081E750067C125 /* StackRepoDetailViewController.storyboard */; };
+		CE57F3082C081F250067C125 /* stackOverflowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F3062C081F250067C125 /* stackOverflowCell.swift */; };
+		CE57F3092C081F250067C125 /* stackOverflowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE57F3072C081F250067C125 /* stackOverflowCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE57F2D92C081B910067C125 /* Homework2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE57F2DC2C081B910067C125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE57F2DE2C081B910067C125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE57F2E62C081B910067C125 /* Homework2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homework2.xcdatamodel; sourceTree = "<group>"; };
+		CE57F2E82C081B930067C125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE57F2EB2C081B930067C125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE57F2ED2C081B930067C125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE57F2F62C081CE20067C125 /* StackOverflowUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowUseCase.swift; sourceTree = "<group>"; };
+		CE57F2F82C081D2F0067C125 /* StackOverflowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowRepository.swift; sourceTree = "<group>"; };
+		CE57F2FA2C081D4D0067C125 /* StackOverflowApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowApiClient.swift; sourceTree = "<group>"; };
+		CE57F2FC2C081D700067C125 /* StackOveflowEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOveflowEntity.swift; sourceTree = "<group>"; };
+		CE57F2FE2C081DD20067C125 /* StackRepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackRepoViewController.swift; sourceTree = "<group>"; };
+		CE57F3002C081DFD0067C125 /* StackRepoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackRepoDetailViewController.swift; sourceTree = "<group>"; };
+		CE57F3022C081E4B0067C125 /* StackRepoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackRepoViewController.storyboard; sourceTree = "<group>"; };
+		CE57F3042C081E750067C125 /* StackRepoDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackRepoDetailViewController.storyboard; sourceTree = "<group>"; };
+		CE57F3062C081F250067C125 /* stackOverflowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stackOverflowCell.swift; sourceTree = "<group>"; };
+		CE57F3072C081F250067C125 /* stackOverflowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = stackOverflowCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE57F2D62C081B910067C125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE57F2D02C081B910067C125 = {
+			isa = PBXGroup;
+			children = (
+				CE57F2DB2C081B910067C125 /* Homework2 */,
+				CE57F2DA2C081B910067C125 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE57F2DA2C081B910067C125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE57F2D92C081B910067C125 /* Homework2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE57F2DB2C081B910067C125 /* Homework2 */ = {
+			isa = PBXGroup;
+			children = (
+				CE57F2F32C081C690067C125 /* Model */,
+				CE57F2F42C081C7C0067C125 /* View */,
+				CE57F2F52C081C930067C125 /* Controller */,
+				CE57F2E82C081B930067C125 /* Assets.xcassets */,
+				CE57F2DC2C081B910067C125 /* AppDelegate.swift */,
+				CE57F2DE2C081B910067C125 /* SceneDelegate.swift */,
+				CE57F2EA2C081B930067C125 /* LaunchScreen.storyboard */,
+				CE57F2ED2C081B930067C125 /* Info.plist */,
+				CE57F2E52C081B910067C125 /* Homework2.xcdatamodeld */,
+			);
+			path = Homework2;
+			sourceTree = "<group>";
+		};
+		CE57F2F32C081C690067C125 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE57F2F62C081CE20067C125 /* StackOverflowUseCase.swift */,
+				CE57F2F82C081D2F0067C125 /* StackOverflowRepository.swift */,
+				CE57F2FA2C081D4D0067C125 /* StackOverflowApiClient.swift */,
+				CE57F2FC2C081D700067C125 /* StackOveflowEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE57F2F42C081C7C0067C125 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE57F3062C081F250067C125 /* stackOverflowCell.swift */,
+				CE57F3072C081F250067C125 /* stackOverflowCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE57F2F52C081C930067C125 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE57F2FE2C081DD20067C125 /* StackRepoViewController.swift */,
+				CE57F3022C081E4B0067C125 /* StackRepoViewController.storyboard */,
+				CE57F3002C081DFD0067C125 /* StackRepoDetailViewController.swift */,
+				CE57F3042C081E750067C125 /* StackRepoDetailViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE57F2D82C081B910067C125 /* Homework2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE57F2F02C081B930067C125 /* Build configuration list for PBXNativeTarget "Homework2" */;
+			buildPhases = (
+				CE57F2D52C081B910067C125 /* Sources */,
+				CE57F2D62C081B910067C125 /* Frameworks */,
+				CE57F2D72C081B910067C125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Homework2;
+			productName = Homework2;
+			productReference = CE57F2D92C081B910067C125 /* Homework2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE57F2D12C081B910067C125 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CE57F2D82C081B910067C125 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = CE57F2D42C081B910067C125 /* Build configuration list for PBXProject "Homework2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE57F2D02C081B910067C125;
+			productRefGroup = CE57F2DA2C081B910067C125 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE57F2D82C081B910067C125 /* Homework2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE57F2D72C081B910067C125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE57F3032C081E4B0067C125 /* StackRepoViewController.storyboard in Resources */,
+				CE57F3052C081E750067C125 /* StackRepoDetailViewController.storyboard in Resources */,
+				CE57F3092C081F250067C125 /* stackOverflowCell.xib in Resources */,
+				CE57F2E92C081B930067C125 /* Assets.xcassets in Resources */,
+				CE57F2EC2C081B930067C125 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE57F2D52C081B910067C125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE57F3082C081F250067C125 /* stackOverflowCell.swift in Sources */,
+				CE57F2FD2C081D700067C125 /* StackOveflowEntity.swift in Sources */,
+				CE57F2E72C081B910067C125 /* Homework2.xcdatamodeld in Sources */,
+				CE57F2FF2C081DD20067C125 /* StackRepoViewController.swift in Sources */,
+				CE57F2DD2C081B910067C125 /* AppDelegate.swift in Sources */,
+				CE57F2F72C081CE20067C125 /* StackOverflowUseCase.swift in Sources */,
+				CE57F2F92C081D2F0067C125 /* StackOverflowRepository.swift in Sources */,
+				CE57F2FB2C081D4D0067C125 /* StackOverflowApiClient.swift in Sources */,
+				CE57F3012C081DFD0067C125 /* StackRepoDetailViewController.swift in Sources */,
+				CE57F2DF2C081B910067C125 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE57F2EA2C081B930067C125 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE57F2EB2C081B930067C125 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE57F2EE2C081B930067C125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE57F2EF2C081B930067C125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE57F2F12C081B930067C125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FL7354HD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Homework2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = StackRepoViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IgarashiAi.Homework2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE57F2F22C081B930067C125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FL7354HD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Homework2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = StackRepoViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IgarashiAi.Homework2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE57F2D42C081B910067C125 /* Build configuration list for PBXProject "Homework2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE57F2EE2C081B930067C125 /* Debug */,
+				CE57F2EF2C081B930067C125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE57F2F02C081B930067C125 /* Build configuration list for PBXNativeTarget "Homework2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE57F2F12C081B930067C125 /* Debug */,
+				CE57F2F22C081B930067C125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE57F2E52C081B910067C125 /* Homework2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE57F2E62C081B910067C125 /* Homework2.xcdatamodel */,
+			);
+			currentVersion = CE57F2E62C081B910067C125 /* Homework2.xcdatamodel */;
+			path = Homework2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE57F2D12C081B910067C125 /* Project object */;
+}
