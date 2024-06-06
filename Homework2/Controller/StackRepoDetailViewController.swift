@@ -9,7 +9,7 @@ import UIKit
 import WebKit
 
 class StackRepoDetailViewController: UIViewController {
-    var repository: StackOverflowEntity?
+    var repository: Question?
     var webView: WKWebView!
     
     override func viewDidLoad() {

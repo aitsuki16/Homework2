@@ -9,27 +9,24 @@ import Foundation
 
 class StackOverflowApiClient {
     struct APIConstant {
-//        static let baseURL = "https://api.stackexchange.com/2.3/questions?order=desc&sort=activity&site=stackoverflow"
-//        static let searchPath = ""
-        
         static let baseURL = "https://api.stackexchange.com/2.3"
-            static let searchPath = "/search"
+        static let searchPath = "/search"
         
         static func searchURL(query: String, tag: String) -> String {
-                return "\(baseURL)\(searchPath)?order=desc&sort=activity&intitle=\(query)&tagged=\(tag)&site=stackoverflow"
-            }
+            return "\(baseURL)\(searchPath)?order=desc&sort=activity&intitle=\(query)&tagged=\(tag)&site=stackoverflow"
+        }
     }
     
-    func getRepositories(searchQuery: String, completion: @escaping (Result<[StackOverflowEntity], Error>) -> Void) {
+    func getRepositories(searchQuery: String, completion: @escaping (Result<[Question], Error>) -> Void) {
         var components = URLComponents(string: APIConstant.baseURL)
         components?.path = APIConstant.searchPath
         components?.queryItems = [
-                    URLQueryItem(name: "order", value: "desc"),
-                    URLQueryItem(name: "sort", value: "activity"),
-                    URLQueryItem(name: "site", value: "stackoverflow"),
-                    URLQueryItem(name: "q", value: searchQuery),
-                    URLQueryItem(name: "intitle", value: searchQuery)
-                                 ]
+            URLQueryItem(name: "order", value: "desc"),
+            URLQueryItem(name: "sort", value: "activity"),
+            URLQueryItem(name: "site", value: "stackoverflow"),
+            URLQueryItem(name: "q", value: searchQuery),
+            URLQueryItem(name: "intitle", value: searchQuery)
+        ]
         guard let url = components?.url else {
             completion(.failure(NSError(domain: "Invalid URL", code: -1, userInfo: nil)))
             return
@@ -49,13 +46,11 @@ class StackOverflowApiClient {
             do {
                 let decodeResponse = try
                 JSONDecoder().decode(StackOverflowSearchResult.self, from:data)
-                    completion(.success(decodeResponse.items))
-                } catch {
-                    completion(.failure(error))
-                }
+                completion(.success(decodeResponse.items))
+            } catch {
+                completion(.failure(error))
             }
-            task.resume()
-        
+        }
+        task.resume()
     }
-    
 }

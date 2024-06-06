@@ -7,22 +7,21 @@
 
 import UIKit
 
-class stackOverflowCell: UITableViewCell {
+class QuestionTableViewCell: UITableViewCell {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tagsLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
     }
-    func configure(with repository: StackOverflowEntity) {
-        print("Configuring cell with: \(repository)") // Debug print
+
+    func configure(with repository: Question) {
+        print("Configuring cell with: \(repository)")
         titleLabel.text = repository.title
         scoreLabel.text = "Score: \(repository.score)"
         tagsLabel.text = "Tags: \(repository.tags.joined(separator: ", "))"

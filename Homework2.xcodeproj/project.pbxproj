@@ -15,13 +15,13 @@
 		CE57F2F72C081CE20067C125 /* StackOverflowUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2F62C081CE20067C125 /* StackOverflowUseCase.swift */; };
 		CE57F2F92C081D2F0067C125 /* StackOverflowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2F82C081D2F0067C125 /* StackOverflowRepository.swift */; };
 		CE57F2FB2C081D4D0067C125 /* StackOverflowApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2FA2C081D4D0067C125 /* StackOverflowApiClient.swift */; };
-		CE57F2FD2C081D700067C125 /* StackOveflowEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2FC2C081D700067C125 /* StackOveflowEntity.swift */; };
+		CE57F2FD2C081D700067C125 /* QuestionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2FC2C081D700067C125 /* QuestionEntity.swift */; };
 		CE57F2FF2C081DD20067C125 /* StackRepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F2FE2C081DD20067C125 /* StackRepoViewController.swift */; };
 		CE57F3012C081DFD0067C125 /* StackRepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F3002C081DFD0067C125 /* StackRepoDetailViewController.swift */; };
 		CE57F3032C081E4B0067C125 /* StackRepoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE57F3022C081E4B0067C125 /* StackRepoViewController.storyboard */; };
 		CE57F3052C081E750067C125 /* StackRepoDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE57F3042C081E750067C125 /* StackRepoDetailViewController.storyboard */; };
-		CE57F3082C081F250067C125 /* stackOverflowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F3062C081F250067C125 /* stackOverflowCell.swift */; };
-		CE57F3092C081F250067C125 /* stackOverflowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE57F3072C081F250067C125 /* stackOverflowCell.xib */; };
+		CE57F3082C081F250067C125 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F3062C081F250067C125 /* QuestionTableViewCell.swift */; };
+		CE57F3092C081F250067C125 /* QuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE57F3072C081F250067C125 /* QuestionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,13 +35,13 @@
 		CE57F2F62C081CE20067C125 /* StackOverflowUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowUseCase.swift; sourceTree = "<group>"; };
 		CE57F2F82C081D2F0067C125 /* StackOverflowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowRepository.swift; sourceTree = "<group>"; };
 		CE57F2FA2C081D4D0067C125 /* StackOverflowApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowApiClient.swift; sourceTree = "<group>"; };
-		CE57F2FC2C081D700067C125 /* StackOveflowEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOveflowEntity.swift; sourceTree = "<group>"; };
+		CE57F2FC2C081D700067C125 /* QuestionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionEntity.swift; sourceTree = "<group>"; };
 		CE57F2FE2C081DD20067C125 /* StackRepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackRepoViewController.swift; sourceTree = "<group>"; };
 		CE57F3002C081DFD0067C125 /* StackRepoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackRepoDetailViewController.swift; sourceTree = "<group>"; };
 		CE57F3022C081E4B0067C125 /* StackRepoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackRepoViewController.storyboard; sourceTree = "<group>"; };
 		CE57F3042C081E750067C125 /* StackRepoDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackRepoDetailViewController.storyboard; sourceTree = "<group>"; };
-		CE57F3062C081F250067C125 /* stackOverflowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stackOverflowCell.swift; sourceTree = "<group>"; };
-		CE57F3072C081F250067C125 /* stackOverflowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = stackOverflowCell.xib; sourceTree = "<group>"; };
+		CE57F3062C081F250067C125 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		CE57F3072C081F250067C125 /* QuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 				CE57F2F62C081CE20067C125 /* StackOverflowUseCase.swift */,
 				CE57F2F82C081D2F0067C125 /* StackOverflowRepository.swift */,
 				CE57F2FA2C081D4D0067C125 /* StackOverflowApiClient.swift */,
-				CE57F2FC2C081D700067C125 /* StackOveflowEntity.swift */,
+				CE57F2FC2C081D700067C125 /* QuestionEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,8 +101,8 @@
 		CE57F2F42C081C7C0067C125 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE57F3062C081F250067C125 /* stackOverflowCell.swift */,
-				CE57F3072C081F250067C125 /* stackOverflowCell.xib */,
+				CE57F3062C081F250067C125 /* QuestionTableViewCell.swift */,
+				CE57F3072C081F250067C125 /* QuestionTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			files = (
 				CE57F3032C081E4B0067C125 /* StackRepoViewController.storyboard in Resources */,
 				CE57F3052C081E750067C125 /* StackRepoDetailViewController.storyboard in Resources */,
-				CE57F3092C081F250067C125 /* stackOverflowCell.xib in Resources */,
+				CE57F3092C081F250067C125 /* QuestionTableViewCell.xib in Resources */,
 				CE57F2E92C081B930067C125 /* Assets.xcassets in Resources */,
 				CE57F2EC2C081B930067C125 /* Base in Resources */,
 			);
@@ -191,8 +191,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE57F3082C081F250067C125 /* stackOverflowCell.swift in Sources */,
-				CE57F2FD2C081D700067C125 /* StackOveflowEntity.swift in Sources */,
+				CE57F3082C081F250067C125 /* QuestionTableViewCell.swift in Sources */,
+				CE57F2FD2C081D700067C125 /* QuestionEntity.swift in Sources */,
 				CE57F2E72C081B910067C125 /* Homework2.xcdatamodeld in Sources */,
 				CE57F2FF2C081DD20067C125 /* StackRepoViewController.swift in Sources */,
 				CE57F2DD2C081B910067C125 /* AppDelegate.swift in Sources */,

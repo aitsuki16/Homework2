@@ -13,7 +13,7 @@ class StackOverflowUseCase {
         self.repository = repository
     }
     
-    func getRepositories(searchQuery: String, completion: @escaping (Result<[StackOverflowEntity],Error>) -> Void) {
+    func getQuestions(searchQuery: String, completion: @escaping (Result<[Question],Error>) -> Void) {
         repository.fetchRepositories(searchQuery: searchQuery) { result in
             completion(result)
             

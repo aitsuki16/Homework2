@@ -15,7 +15,7 @@ class StackOverflowRepository {
     }
     
     func fetchRepositories(searchQuery: String, completion: @escaping(
-        Result<[StackOverflowEntity], Error>) -> Void) {
+        Result<[Question], Error>) -> Void) {
             apiClient.getRepositories(searchQuery: searchQuery) {
                 result in
                 switch result {

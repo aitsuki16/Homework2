@@ -16,7 +16,7 @@ class StackRepoViewController: UIViewController {
     
     
     private let useCase = StackOverflowUseCase()
-    private var repositories: [StackOverflowEntity] = []
+    private var repositories: [Question] = []
     
     override func viewDidLoad() {
         
@@ -24,12 +24,12 @@ class StackRepoViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UINib(nibName: String(describing: stackOverflowCell.self), bundle: nil),forCellReuseIdentifier: String(describing: stackOverflowCell.self))
+        tableView.register(UINib(nibName: String(describing: QuestionTableViewCell.self), bundle: nil),forCellReuseIdentifier: String(describing: QuestionTableViewCell.self))
         searchBar.delegate = self
     }
     
     private func fetchRepositories(searchQuery: String) {
-        useCase.getRepositories(searchQuery: searchQuery) {
+        useCase.getQuestions(searchQuery: searchQuery) {
             [weak self] result in
             switch result {
             case .success(let repositories):
@@ -70,13 +70,13 @@ extension StackRepoViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: stackOverflowCell.self), for: indexPath) as? stackOverflowCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: QuestionTableViewCell.self), for: indexPath) as? QuestionTableViewCell {
             let repository = repositories[indexPath.row]
             cell.configure(with: repository)
                     
             return cell
         }
-        return stackOverflowCell()
+        return QuestionTableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

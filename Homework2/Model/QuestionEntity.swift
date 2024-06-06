@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StackOverflowEntity: Codable {
+struct Question: Codable {
    
     let owner: Owner
     let score: Int
@@ -34,7 +34,7 @@ struct Owner: Codable {
     }
 }
 struct StackOverflowSearchResult: Codable {
-    let items: [StackOverflowEntity]
+    let items: [Question]
 }
 
 
