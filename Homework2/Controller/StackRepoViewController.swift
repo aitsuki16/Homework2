@@ -83,9 +83,9 @@ extension StackRepoViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         let question = questions[indexPath.row]
         
-        let detailVC = StackRepoDetailViewController()
-        detailVC.question = question
-        navigationController?.pushViewController(detailVC, animated: true)
+        let detailViewController = StackRepoDetailViewController()
+        detailViewController.question = question 
+        navigationController?.pushViewController(detailViewController, animated: true)
        
     }
     

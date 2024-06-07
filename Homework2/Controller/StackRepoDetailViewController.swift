@@ -16,13 +16,14 @@ class StackRepoDetailViewController: UIViewController {
         super.viewDidLoad()
         setupWebView()
  
-        webView = WKWebView(frame: self.view.bounds)
-               webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-               webView.translatesAutoresizingMaskIntoConstraints = false
-               self.view.addSubview(webView)
+      
         
     }
         private func setupWebView() {
+            webView = WKWebView(frame: self.view.bounds)
+                   webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                   webView.translatesAutoresizingMaskIntoConstraints = false
+                   self.view.addSubview(webView)
             view.addSubview(webView)
             NSLayoutConstraint.activate([
                 webView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -35,9 +36,12 @@ class StackRepoDetailViewController: UIViewController {
         
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if let question,
+        if let question = question,
            let url = URL(string: question.link) {
             webView.load(URLRequest(url: url))
+        } else {
+            print("Error: Question or URL is nil")
+
         }
     }
 }

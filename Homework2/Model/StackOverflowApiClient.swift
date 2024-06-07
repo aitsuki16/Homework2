@@ -12,9 +12,9 @@ class StackOverflowApiClient {
         static let baseURL = "https://api.stackexchange.com/2.3"
         static let searchPath = "/search"
         
-        static func searchURL(query: String, tag: String) -> String {
-            return "\(baseURL)\(searchPath)?order=desc&sort=activity&intitle=\(query)&tagged=\(tag)&site=stackoverflow"
-        }
+//        static func searchURL(query: String, tag: String) -> String {
+//            return "\(baseURL)\(searchPath)?order=desc&sort=activity&intitle=\(query)&tagged=\(tag)&site=stackoverflow"
+//        }
     }
     
     func getRepositories(searchQuery: String, completion: @escaping (Result<[Question], Error>) -> Void) {
