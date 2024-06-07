@@ -16,7 +16,7 @@ class StackRepoViewController: UIViewController {
     
     
     private let useCase = StackOverflowUseCase()
-    private var repositories: [Question] = []
+    private var questions: [Question] = []
     
     override func viewDidLoad() {
         
@@ -35,7 +35,7 @@ class StackRepoViewController: UIViewController {
             case .success(let repositories):
                 print("Fetched repositories: \(repositories)")
 
-                self?.repositories = repositories
+                self?.questions = repositories
                 DispatchQueue.main.async {
                     self?.tableView.reloadData()
                 }
@@ -59,20 +59,20 @@ extension StackRepoViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
-            repositories = []
+            questions = []
             tableView.reloadData()
         }
     }
 }
 extension StackRepoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return repositories.count
+        return questions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: QuestionTableViewCell.self), for: indexPath) as? QuestionTableViewCell {
-            let repository = repositories[indexPath.row]
-            cell.configure(with: repository)
+            let question = questions[indexPath.row]
+            cell.configure(with: question)
                     
             return cell
         }
@@ -81,14 +81,16 @@ extension StackRepoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let repository = repositories[indexPath.row]
+        let question = questions[indexPath.row]
+        
         let detailVC = StackRepoDetailViewController()
-        detailVC.repository = repository
+        detailVC.question = question
         navigationController?.pushViewController(detailVC, animated: true)
+       
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 100
     }
 }
 

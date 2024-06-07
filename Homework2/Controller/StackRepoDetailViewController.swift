@@ -9,7 +9,7 @@ import UIKit
 import WebKit
 
 class StackRepoDetailViewController: UIViewController {
-    var repository: Question?
+    var question: Question?
     var webView: WKWebView!
     
     override func viewDidLoad() {
@@ -35,12 +35,9 @@ class StackRepoDetailViewController: UIViewController {
         
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if let repository,
-           let url = URL(string: repository.link) {
+        if let question,
+           let url = URL(string: question.link) {
             webView.load(URLRequest(url: url))
         }
-    }
-    deinit {
-        webView = nil
     }
 }

@@ -63,6 +63,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="delegate" destination="JGk-Td-Iqn" id="Hd0-JW-4L8"/>
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="NeN-sn-yPK"/>
                     </connections>
                 </navigationController>

@@ -7,14 +7,14 @@
 import Foundation
 
 class StackOverflowUseCase {
-    private let repository: StackOverflowRepository
+    private let question: StackOverflowRepository
     
-    init(repository: StackOverflowRepository = StackOverflowRepository()) {
-        self.repository = repository
+    init(question: StackOverflowRepository = StackOverflowRepository()) {
+        self.question = question
     }
     
     func getQuestions(searchQuery: String, completion: @escaping (Result<[Question],Error>) -> Void) {
-        repository.fetchRepositories(searchQuery: searchQuery) { result in
+        question.fetchRepositories(searchQuery: searchQuery) { result in
             completion(result)
             
         }

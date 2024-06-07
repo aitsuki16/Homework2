@@ -20,12 +20,12 @@ class QuestionTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 
-    func configure(with repository: Question) {
-        print("Configuring cell with: \(repository)")
-        titleLabel.text = repository.title
-        scoreLabel.text = "Score: \(repository.score)"
-        tagsLabel.text = "Tags: \(repository.tags.joined(separator: ", "))"
-        if let dateString = formatDate(from: repository.creationDate) {
+    func configure(with question: Question) {
+        print("Configuring cell with: \(question)")
+        titleLabel.text = question.title
+        scoreLabel.text = "Score: \(question.score)"
+        tagsLabel.text = "Tags: \(question.tags.joined(separator: ", "))"
+        if let dateString = formatDate(from: question.creationDate) {
             dateLabel.text = "Created on: \(dateString)"
         }
     }
